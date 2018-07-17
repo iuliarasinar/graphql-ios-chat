@@ -1,0 +1,561 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		98D41EC820FE8B2900BE27E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D41EC720FE8B2900BE27E4 /* AppDelegate.swift */; };
+		98D41ECA20FE8B2900BE27E4 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D41EC920FE8B2900BE27E4 /* MasterViewController.swift */; };
+		98D41ECC20FE8B2900BE27E4 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D41ECB20FE8B2900BE27E4 /* DetailViewController.swift */; };
+		98D41ECF20FE8B2900BE27E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98D41ECD20FE8B2900BE27E4 /* Main.storyboard */; };
+		98D41ED120FE8B2900BE27E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98D41ED020FE8B2900BE27E4 /* Assets.xcassets */; };
+		98D41ED420FE8B2900BE27E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98D41ED220FE8B2900BE27E4 /* LaunchScreen.storyboard */; };
+		98D41EDF20FE8B2900BE27E4 /* graphql_ios_chatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D41EDE20FE8B2900BE27E4 /* graphql_ios_chatTests.swift */; };
+		98D41EEA20FE8B2900BE27E4 /* graphql_ios_chatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D41EE920FE8B2900BE27E4 /* graphql_ios_chatUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		98D41EDB20FE8B2900BE27E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 98D41EBC20FE8B2900BE27E4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 98D41EC320FE8B2900BE27E4;
+			remoteInfo = "graphql-ios-chat";
+		};
+		98D41EE620FE8B2900BE27E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 98D41EBC20FE8B2900BE27E4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 98D41EC320FE8B2900BE27E4;
+			remoteInfo = "graphql-ios-chat";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		98D41EC420FE8B2900BE27E4 /* graphql-ios-chat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "graphql-ios-chat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		98D41EC720FE8B2900BE27E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		98D41EC920FE8B2900BE27E4 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		98D41ECB20FE8B2900BE27E4 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		98D41ECE20FE8B2900BE27E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		98D41ED020FE8B2900BE27E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		98D41ED320FE8B2900BE27E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		98D41ED520FE8B2900BE27E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		98D41EDA20FE8B2900BE27E4 /* graphql-ios-chatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "graphql-ios-chatTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		98D41EDE20FE8B2900BE27E4 /* graphql_ios_chatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = graphql_ios_chatTests.swift; sourceTree = "<group>"; };
+		98D41EE020FE8B2900BE27E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		98D41EE520FE8B2900BE27E4 /* graphql-ios-chatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "graphql-ios-chatUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		98D41EE920FE8B2900BE27E4 /* graphql_ios_chatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = graphql_ios_chatUITests.swift; sourceTree = "<group>"; };
+		98D41EEB20FE8B2900BE27E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		98D41EC120FE8B2900BE27E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98D41ED720FE8B2900BE27E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98D41EE220FE8B2900BE27E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		98D41EBB20FE8B2900BE27E4 = {
+			isa = PBXGroup;
+			children = (
+				98D41EC620FE8B2900BE27E4 /* graphql-ios-chat */,
+				98D41EDD20FE8B2900BE27E4 /* graphql-ios-chatTests */,
+				98D41EE820FE8B2900BE27E4 /* graphql-ios-chatUITests */,
+				98D41EC520FE8B2900BE27E4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		98D41EC520FE8B2900BE27E4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				98D41EC420FE8B2900BE27E4 /* graphql-ios-chat.app */,
+				98D41EDA20FE8B2900BE27E4 /* graphql-ios-chatTests.xctest */,
+				98D41EE520FE8B2900BE27E4 /* graphql-ios-chatUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		98D41EC620FE8B2900BE27E4 /* graphql-ios-chat */ = {
+			isa = PBXGroup;
+			children = (
+				98D41EC720FE8B2900BE27E4 /* AppDelegate.swift */,
+				98D41EC920FE8B2900BE27E4 /* MasterViewController.swift */,
+				98D41ECB20FE8B2900BE27E4 /* DetailViewController.swift */,
+				98D41ECD20FE8B2900BE27E4 /* Main.storyboard */,
+				98D41ED020FE8B2900BE27E4 /* Assets.xcassets */,
+				98D41ED220FE8B2900BE27E4 /* LaunchScreen.storyboard */,
+				98D41ED520FE8B2900BE27E4 /* Info.plist */,
+			);
+			path = "graphql-ios-chat";
+			sourceTree = "<group>";
+		};
+		98D41EDD20FE8B2900BE27E4 /* graphql-ios-chatTests */ = {
+			isa = PBXGroup;
+			children = (
+				98D41EDE20FE8B2900BE27E4 /* graphql_ios_chatTests.swift */,
+				98D41EE020FE8B2900BE27E4 /* Info.plist */,
+			);
+			path = "graphql-ios-chatTests";
+			sourceTree = "<group>";
+		};
+		98D41EE820FE8B2900BE27E4 /* graphql-ios-chatUITests */ = {
+			isa = PBXGroup;
+			children = (
+				98D41EE920FE8B2900BE27E4 /* graphql_ios_chatUITests.swift */,
+				98D41EEB20FE8B2900BE27E4 /* Info.plist */,
+			);
+			path = "graphql-ios-chatUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		98D41EC320FE8B2900BE27E4 /* graphql-ios-chat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 98D41EEE20FE8B2900BE27E4 /* Build configuration list for PBXNativeTarget "graphql-ios-chat" */;
+			buildPhases = (
+				98D41EC020FE8B2900BE27E4 /* Sources */,
+				98D41EC120FE8B2900BE27E4 /* Frameworks */,
+				98D41EC220FE8B2900BE27E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "graphql-ios-chat";
+			productName = "graphql-ios-chat";
+			productReference = 98D41EC420FE8B2900BE27E4 /* graphql-ios-chat.app */;
+			productType = "com.apple.product-type.application";
+		};
+		98D41ED920FE8B2900BE27E4 /* graphql-ios-chatTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 98D41EF120FE8B2900BE27E4 /* Build configuration list for PBXNativeTarget "graphql-ios-chatTests" */;
+			buildPhases = (
+				98D41ED620FE8B2900BE27E4 /* Sources */,
+				98D41ED720FE8B2900BE27E4 /* Frameworks */,
+				98D41ED820FE8B2900BE27E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				98D41EDC20FE8B2900BE27E4 /* PBXTargetDependency */,
+			);
+			name = "graphql-ios-chatTests";
+			productName = "graphql-ios-chatTests";
+			productReference = 98D41EDA20FE8B2900BE27E4 /* graphql-ios-chatTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		98D41EE420FE8B2900BE27E4 /* graphql-ios-chatUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 98D41EF420FE8B2900BE27E4 /* Build configuration list for PBXNativeTarget "graphql-ios-chatUITests" */;
+			buildPhases = (
+				98D41EE120FE8B2900BE27E4 /* Sources */,
+				98D41EE220FE8B2900BE27E4 /* Frameworks */,
+				98D41EE320FE8B2900BE27E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				98D41EE720FE8B2900BE27E4 /* PBXTargetDependency */,
+			);
+			name = "graphql-ios-chatUITests";
+			productName = "graphql-ios-chatUITests";
+			productReference = 98D41EE520FE8B2900BE27E4 /* graphql-ios-chatUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		98D41EBC20FE8B2900BE27E4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Iulia Rasinar";
+				TargetAttributes = {
+					98D41EC320FE8B2900BE27E4 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					98D41ED920FE8B2900BE27E4 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 98D41EC320FE8B2900BE27E4;
+					};
+					98D41EE420FE8B2900BE27E4 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 98D41EC320FE8B2900BE27E4;
+					};
+				};
+			};
+			buildConfigurationList = 98D41EBF20FE8B2900BE27E4 /* Build configuration list for PBXProject "graphql-ios-chat" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 98D41EBB20FE8B2900BE27E4;
+			productRefGroup = 98D41EC520FE8B2900BE27E4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				98D41EC320FE8B2900BE27E4 /* graphql-ios-chat */,
+				98D41ED920FE8B2900BE27E4 /* graphql-ios-chatTests */,
+				98D41EE420FE8B2900BE27E4 /* graphql-ios-chatUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		98D41EC220FE8B2900BE27E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98D41ED420FE8B2900BE27E4 /* LaunchScreen.storyboard in Resources */,
+				98D41ED120FE8B2900BE27E4 /* Assets.xcassets in Resources */,
+				98D41ECF20FE8B2900BE27E4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98D41ED820FE8B2900BE27E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98D41EE320FE8B2900BE27E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		98D41EC020FE8B2900BE27E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98D41ECC20FE8B2900BE27E4 /* DetailViewController.swift in Sources */,
+				98D41ECA20FE8B2900BE27E4 /* MasterViewController.swift in Sources */,
+				98D41EC820FE8B2900BE27E4 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98D41ED620FE8B2900BE27E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98D41EDF20FE8B2900BE27E4 /* graphql_ios_chatTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98D41EE120FE8B2900BE27E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98D41EEA20FE8B2900BE27E4 /* graphql_ios_chatUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		98D41EDC20FE8B2900BE27E4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 98D41EC320FE8B2900BE27E4 /* graphql-ios-chat */;
+			targetProxy = 98D41EDB20FE8B2900BE27E4 /* PBXContainerItemProxy */;
+		};
+		98D41EE720FE8B2900BE27E4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 98D41EC320FE8B2900BE27E4 /* graphql-ios-chat */;
+			targetProxy = 98D41EE620FE8B2900BE27E4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		98D41ECD20FE8B2900BE27E4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				98D41ECE20FE8B2900BE27E4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		98D41ED220FE8B2900BE27E4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				98D41ED320FE8B2900BE27E4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		98D41EEC20FE8B2900BE27E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		98D41EED20FE8B2900BE27E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		98D41EEF20FE8B2900BE27E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "graphql-ios-chat/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "toy.graphql-ios-chat";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		98D41EF020FE8B2900BE27E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "graphql-ios-chat/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "toy.graphql-ios-chat";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		98D41EF220FE8B2900BE27E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "graphql-ios-chatTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "toy.graphql-ios-chatTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/graphql-ios-chat.app/graphql-ios-chat";
+			};
+			name = Debug;
+		};
+		98D41EF320FE8B2900BE27E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "graphql-ios-chatTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "toy.graphql-ios-chatTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/graphql-ios-chat.app/graphql-ios-chat";
+			};
+			name = Release;
+		};
+		98D41EF520FE8B2900BE27E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "graphql-ios-chatUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "toy.graphql-ios-chatUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "graphql-ios-chat";
+			};
+			name = Debug;
+		};
+		98D41EF620FE8B2900BE27E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "graphql-ios-chatUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "toy.graphql-ios-chatUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "graphql-ios-chat";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		98D41EBF20FE8B2900BE27E4 /* Build configuration list for PBXProject "graphql-ios-chat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98D41EEC20FE8B2900BE27E4 /* Debug */,
+				98D41EED20FE8B2900BE27E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		98D41EEE20FE8B2900BE27E4 /* Build configuration list for PBXNativeTarget "graphql-ios-chat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98D41EEF20FE8B2900BE27E4 /* Debug */,
+				98D41EF020FE8B2900BE27E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		98D41EF120FE8B2900BE27E4 /* Build configuration list for PBXNativeTarget "graphql-ios-chatTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98D41EF220FE8B2900BE27E4 /* Debug */,
+				98D41EF320FE8B2900BE27E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		98D41EF420FE8B2900BE27E4 /* Build configuration list for PBXNativeTarget "graphql-ios-chatUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98D41EF520FE8B2900BE27E4 /* Debug */,
+				98D41EF620FE8B2900BE27E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 98D41EBC20FE8B2900BE27E4 /* Project object */;
+}
