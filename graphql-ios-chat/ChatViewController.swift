@@ -12,6 +12,10 @@ import Apollo
 class ChatViewController: UITableViewController {
 
     var userId: String?
+    func setUser(userId: String?) {
+        self.userId = userId
+    }
+    
     var subFromTo: Cancellable?
     var subToFrom: Cancellable?
     
@@ -46,14 +50,39 @@ class ChatViewController: UITableViewController {
         return cell
     }
     
-    func setUser(userId: String?) {
-        self.userId = userId
+    override func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+        let footerView = UIView(frame: CGRect(x: 0, y: 0, width: tableView.frame.size.width, height: 50))
+        
+        let textField = UITextField(frame: CGRect(x: 10, y: 0, width: tableView.frame.size.width - 80, height: 50))
+        textField.backgroundColor = UIColor.lightGray
+        let sendButton = UIButton(frame: CGRect(x: tableView.frame.size.width - 60, y: 0, width: tableView.frame.size.width, height: 50))
+        let sendButtonImage = UIImage(named: "send")
+        sendButton.setImage(sendButtonImage , for: UIControlState.normal)
+        
+//        sendButton.addTarget(self, action:self.sendMessage(text:textField.text), for: .touchUpInside)
+//        sendButton.setTitle("Send", for: .normal)
+        sendButton.backgroundColor = UIColor.blue
+        
+        
+        footerView.addSubview(textField)
+        footerView.addSubview(sendButton)
+        
+        return footerView
     }
+    
+    override func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        return 50
+    }
+    
     
     // MARK: - Subscription, Mutation
     
-    private func sendMessage(text: String) {
-        apollo.perform(mutation: AddMessageMutationMutation(from: currentUser, to: userId!, text: text)) { (result, error) in
+    func sendMessage(text: String?) {
+        if (text == nil) {
+            return
+        }
+        
+        apollo.perform(mutation: AddMessageMutationMutation(from: currentUser, to: userId!, text: text!)) { (result, error) in
             if let error = error {
                 NSLog("Error while attempting to send message: \(error.localizedDescription)")
             }
