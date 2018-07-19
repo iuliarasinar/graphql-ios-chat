@@ -1,0 +1,6 @@
+mutation AddMessageMutation($from: String!, $to: String!, $text: String!) {
+    addMessage(from: $from, to: $to, text: $text) {
+        id
+        text
+    }
+}

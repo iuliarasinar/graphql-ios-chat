@@ -1,0 +1,25 @@
+PODS:
+  - Apollo (0.9.0):
+    - Apollo/Core (= 0.9.0)
+  - Apollo/Core (0.9.0)
+  - Apollo/WebSocket (0.9.0):
+    - Apollo/Core
+    - Starscream (~> 3.0.2)
+  - Starscream (3.0.5)
+
+DEPENDENCIES:
+  - Apollo
+  - Apollo/WebSocket
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Apollo
+    - Starscream
+
+SPEC CHECKSUMS:
+  Apollo: eb307e71d1db78fe92cb1936c0611aa0cbc2293b
+  Starscream: faf918b2f2eff7d5dd21180646bf015a669673bd
+
+PODFILE CHECKSUM: 01be999691e6dff53a3894815d653f624d69e8d6
+
+COCOAPODS: 1.5.3

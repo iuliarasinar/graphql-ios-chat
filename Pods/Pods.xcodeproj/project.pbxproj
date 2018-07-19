@@ -1,0 +1,1274 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		023C038695FADDF305DE6BEB88453843 /* Pods-graphql-ios-chatUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E4CA25EC96B5544B463D759626382B /* Pods-graphql-ios-chatUITests-dummy.m */; };
+		115A5B6EA87A947E93AB152302B5F16F /* Pods-graphql-ios-chat-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D7B1E22258C4BF7F71F27D5E421E41 /* Pods-graphql-ios-chat-dummy.m */; };
+		15712F379E37DF530E9B88E426CA787B /* Pods-graphql-ios-chat-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 09DC19B3E2AC241C27B4D8E0B85D3D80 /* Pods-graphql-ios-chat-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1F8A36795DB849E7D9E26922148AA3C3 /* AsynchronousOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D5FD6FF79B965804A413EC42CAAEC43 /* AsynchronousOperation.swift */; };
+		2C3CA098A3E2F82F4AFE0AD1FA7A1148 /* Locking.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C86C03BDF1900369F046B3A31EC031 /* Locking.swift */; };
+		2F1EB1CE0600FA109B3650E847C41AE9 /* Starscream-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A9918D422FEE7427A2CBCB421C8C43D3 /* Starscream-dummy.m */; };
+		30423D4A953CC61648E178811F44675C /* Pods-graphql-ios-chatTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A1DAF2EE83AC30C2D3FC8ECDD7EFBE /* Pods-graphql-ios-chatTests-dummy.m */; };
+		313E32DF2733ED16B3239187FA59406A /* Pods-graphql-ios-chatTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 063DD1D6738871BC423DB61A0C5C2A94 /* Pods-graphql-ios-chatTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3167AB38806F6EA2DE3DEE690A47BB6C /* Compression.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8F535A3A025084D82219ABBE32AEE8 /* Compression.swift */; };
+		382736054B3846385B9A219A8D4C9B9C /* DataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72BC1BFAE39C493F9F78F51A73F7CBD /* DataLoader.swift */; };
+		3A3BB5668BFC551154B11387C1B1D558 /* NetworkTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812F57AFF7D8C274CD628BFC26B3C06F /* NetworkTransport.swift */; };
+		3C6D2BA1F8035CA6C7ADD3DC27A8F39A /* GraphQLResultAccumulator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DD6FE059C09CE5F2E19B5D1C5EA8C6 /* GraphQLResultAccumulator.swift */; };
+		3F5664A11296C60F0748D0047E4B64D4 /* JSONStandardTypeConversions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A91F2D88ECD94E3C7CCD89B48D402E9 /* JSONStandardTypeConversions.swift */; };
+		424475300F47227F6C33178456F66042 /* GraphQLQueryWatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1ECD4DBC2CEA9CA0C02C29BAEA34C96 /* GraphQLQueryWatcher.swift */; };
+		424D99DC0FBC5C3BE477A3243EBF112A /* check-and-run-apollo-codegen.sh in Resources */ = {isa = PBXBuildFile; fileRef = 84B69E15B9409C4CDFC81707A5FEC449 /* check-and-run-apollo-codegen.sh */; };
+		4E7721F105B3D9BC79CE6ABE4C1F367F /* SplitNetworkTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93077FE960A267F75CCEC93495F8AE63 /* SplitNetworkTransport.swift */; };
+		4F843A04511B70F8DC33411A39B9DDC1 /* GraphQLExecutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75954BD6F12C75A11066B240C7795A5 /* GraphQLExecutor.swift */; };
+		5025AF0EA7E3350CE182BFF7E2735E17 /* GraphQLDependencyTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743461E4BA1FFA1AEE8DF652C52FEC51 /* GraphQLDependencyTracker.swift */; };
+		5246B0E31B0CEC56EDA1C8076E177B08 /* Collections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145B38752DCF753EE84F2E84456C1561 /* Collections.swift */; };
+		529B1473F5735FD3E91888CD06FF92AB /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC1AFD9BB771A076C3D8BF9CC67EA58 /* Result.swift */; };
+		56A92C2449281C7197C0F07C363EB02D /* HTTPNetworkTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54B0FCC3C02EEB3539078BC3829D21A /* HTTPNetworkTransport.swift */; };
+		5792E484104BBC25EA9357E0E6B7BF2F /* NormalizedCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5789692A6656366664AAD57DB7B6EEF /* NormalizedCache.swift */; };
+		5C9FF4CFF9E32ABA40D71A674682C2A8 /* Apollo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BE15D7F915F127B1A8D5ED7BB4E3EAD5 /* Apollo-dummy.m */; };
+		5EB7A3BBA6DA3AD8442BD13BB9706771 /* GraphQLResponseGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C42B20882A74DF745988FA187F6452C /* GraphQLResponseGenerator.swift */; };
+		6EF8B1510CB48390FE434D05BEDCEAC3 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5BDCD440EE12001DEDCB6A85F0DE5B /* JSON.swift */; };
+		794DA3CA7B9A7214BB5A8017D2C31A2D /* GraphQLSelectionSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9C578A16F2DC9A9C2E6C394EBDFF67 /* GraphQLSelectionSet.swift */; };
+		7E9EFDAFA6D39A5B7C6DEA75B555E79D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1F7B4AFB2E41A369EFF6E3E81C04691 /* Foundation.framework */; };
+		80C15DC6CCFEE22D17236BDE85643088 /* InMemoryNormalizedCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15DD2A6CAE73F33C4AD963957089A6D /* InMemoryNormalizedCache.swift */; };
+		8548A9572A6CF0E4287891AC763B1DE7 /* GraphQLOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4CAFC9F288008FDCA5967FED61694D4 /* GraphQLOperation.swift */; };
+		88735D822C3C6433BD934FACD3F30B7C /* Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92BEE6430A8C1E9C3B1753D2FE5E5AF1 /* Promise.swift */; };
+		8F35B3A49A17E0DE8880F5416E942C72 /* JSONSerializationFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9732054FEC903427C7CA20DE0ABD895E /* JSONSerializationFormat.swift */; };
+		904B55543B7414C4AEA76687EF4ACB2D /* GraphQLInputValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE4DF43EACE3DC72DA952AB3C8D81AC /* GraphQLInputValue.swift */; };
+		98B85AF219D5EF4BFA8ED2A59E1BDE8D /* WebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F2FB5EC9DC09576D3F665B485BCFCDF /* WebSocket.swift */; };
+		9C790966EE8A13578E4F94B6A09FAD34 /* Pods-graphql-ios-chatUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B397C31BC2AA3C7E1446B6E45AB8456E /* Pods-graphql-ios-chatUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A14971FDCDC194BC082E7FF1702FC2F6 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2777D441DC2BD3F63CD4F23D2D9D451 /* Utilities.swift */; };
+		A61C9A82332E8A0008FE755FBBF46ECD /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F52249DD4D3DD3159B64A42F2E7349B /* Starscream.framework */; };
+		AB12A4A40B71C469DFAF962C8A1BCCD0 /* GraphQLResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70C0D156B801067B400C07A2F64CC31 /* GraphQLResult.swift */; };
+		AE4FA4922B3F71A70C3F8CA2B1624657 /* Starscream-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E712C3191C2C2F648E06E7C80943BE9C /* Starscream-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B3C342D8D1EC556C28A3137D54850ECE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1F7B4AFB2E41A369EFF6E3E81C04691 /* Foundation.framework */; };
+		B7279E8F875039FB394CF4808B04E66B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1F7B4AFB2E41A369EFF6E3E81C04691 /* Foundation.framework */; };
+		BC6033A16E7905772A5D0CFEC496B0FB /* GraphQLError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82389F5FCAE106ACDB84164039795BF /* GraphQLError.swift */; };
+		BE2CF56C555AB0CABB9A8C069DFC2D77 /* GraphQLResultNormalizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD37EE3DB071D6B296FED3867E2C00A /* GraphQLResultNormalizer.swift */; };
+		CD7B68A7CED6AB01B553656F6762DF14 /* ApolloStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59122B591D7B44278623582A9CCAE3DE /* ApolloStore.swift */; };
+		D8E20F651FF4F5A3D032F1CBBEB970DC /* ResultOrPromise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22884389634AA7EC65F7FD23B883BF95 /* ResultOrPromise.swift */; };
+		E2291C070FBEF4E3A2AFD5A362EF3AD2 /* GraphQLSelectionSetMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FEBEFC17A1791186ACF357D682E645 /* GraphQLSelectionSetMapper.swift */; };
+		E5A56EEB7E9ED4E7CAF83FB9FB70AC70 /* GraphQLResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E06EF355668BE44659FAA13E643AA89 /* GraphQLResponse.swift */; };
+		EDCDA08EDBEF6D90E45F3EB987F7085D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1F7B4AFB2E41A369EFF6E3E81C04691 /* Foundation.framework */; };
+		EF50FBB33BF85B3F32B09CF048CEADDC /* WebSocketTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428E1D3496F6A88183C2DE3F71595ED9 /* WebSocketTransport.swift */; };
+		EF7C2EBC21D826DDC2953E115B3110AA /* SSLSecurity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC9F391CF8E4288345085B5D95F5FF3 /* SSLSecurity.swift */; };
+		F6A6B305C1D4CBE6358006FE5D4456A6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1F7B4AFB2E41A369EFF6E3E81C04691 /* Foundation.framework */; };
+		F90D6735A055EFC772B7899DB1E44DFB /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CCC9C1318035CB339320F5288BE9847 /* Record.swift */; };
+		F928CFC3377FB96211FEE99BBD32272C /* ApolloClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADDE11BEB6D776FA8D6216F8E6D9F96 /* ApolloClient.swift */; };
+		F929BB2ACA885ED3BBDB60559505A318 /* RecordSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E0B5D2AA6DCA0147AC663CC4D043DD /* RecordSet.swift */; };
+		FE1FEBDAED95FDDF49BF62B1BCDEE166 /* Apollo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CDB7D6D0C0A3F48972EC40B22B2D294 /* Apollo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1E2FB49D70C885B2E7214D904F70655D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 891EB2AC758B8014D7FA55B44769D5E4;
+			remoteInfo = Starscream;
+		};
+		33D59CE1E732AF368A1CC3CF825AB075 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18EE38D23DB0D1F2B10B0E01DE6F9298;
+			remoteInfo = Apollo;
+		};
+		B164B2673EA1B42604BCC69648ADB0BA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BF8290CD81A146F58D03D5A5930DF945;
+			remoteInfo = "Pods-graphql-ios-chat";
+		};
+		C25755F1AAA874E961A4213832B15F7F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BF8290CD81A146F58D03D5A5930DF945;
+			remoteInfo = "Pods-graphql-ios-chat";
+		};
+		FF82BE6E52C86580E5FE81E7AD7CE6E0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 891EB2AC758B8014D7FA55B44769D5E4;
+			remoteInfo = Starscream;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00ED74851357FEF09B977ED51AE3DEAA /* Pods-graphql-ios-chatTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-graphql-ios-chatTests.debug.xcconfig"; sourceTree = "<group>"; };
+		03A1DAF2EE83AC30C2D3FC8ECDD7EFBE /* Pods-graphql-ios-chatTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-graphql-ios-chatTests-dummy.m"; sourceTree = "<group>"; };
+		03DD6FE059C09CE5F2E19B5D1C5EA8C6 /* GraphQLResultAccumulator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GraphQLResultAccumulator.swift; path = Sources/Apollo/GraphQLResultAccumulator.swift; sourceTree = "<group>"; };
+		03F68A6945BA591DB7654248F66E622F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		063DD1D6738871BC423DB61A0C5C2A94 /* Pods-graphql-ios-chatTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-graphql-ios-chatTests-umbrella.h"; sourceTree = "<group>"; };
+		0992E3C8AB70BF8FF8A3E4C5C99BE3D1 /* Starscream-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Starscream-prefix.pch"; sourceTree = "<group>"; };
+		09DC19B3E2AC241C27B4D8E0B85D3D80 /* Pods-graphql-ios-chat-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-graphql-ios-chat-umbrella.h"; sourceTree = "<group>"; };
+		0CCC9C1318035CB339320F5288BE9847 /* Record.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Record.swift; path = Sources/Apollo/Record.swift; sourceTree = "<group>"; };
+		0DE4DF43EACE3DC72DA952AB3C8D81AC /* GraphQLInputValue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GraphQLInputValue.swift; path = Sources/Apollo/GraphQLInputValue.swift; sourceTree = "<group>"; };
+		0F52249DD4D3DD3159B64A42F2E7349B /* Starscream.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Starscream.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		145B38752DCF753EE84F2E84456C1561 /* Collections.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Collections.swift; path = Sources/Apollo/Collections.swift; sourceTree = "<group>"; };
+		14E4CA25EC96B5544B463D759626382B /* Pods-graphql-ios-chatUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-graphql-ios-chatUITests-dummy.m"; sourceTree = "<group>"; };
+		1CC9F391CF8E4288345085B5D95F5FF3 /* SSLSecurity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SSLSecurity.swift; path = Sources/SSLSecurity.swift; sourceTree = "<group>"; };
+		1EBDFE4EAC3DA1C940EEA58E5EC06A56 /* Pods-graphql-ios-chatUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-graphql-ios-chatUITests-resources.sh"; sourceTree = "<group>"; };
+		22884389634AA7EC65F7FD23B883BF95 /* ResultOrPromise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResultOrPromise.swift; path = Sources/Apollo/ResultOrPromise.swift; sourceTree = "<group>"; };
+		27D7B1E22258C4BF7F71F27D5E421E41 /* Pods-graphql-ios-chat-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-graphql-ios-chat-dummy.m"; sourceTree = "<group>"; };
+		2B89D0C6A220C85F4D2A1F469D1172E3 /* Pods-graphql-ios-chatUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-graphql-ios-chatUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		2BF5ECCB7A263AA93C11AD863869409A /* Apollo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Apollo.framework; path = Apollo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DC202ACBB5B1E5CDAC1B2C93A3A12A1 /* Pods-graphql-ios-chatTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-graphql-ios-chatTests-frameworks.sh"; sourceTree = "<group>"; };
+		2E1E532D3EEC326754197CF8678E6026 /* Starscream.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Starscream.framework; path = Starscream.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		34E1D4FAA12692B02E7D830328944BBE /* Starscream.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Starscream.modulemap; sourceTree = "<group>"; };
+		3A91F2D88ECD94E3C7CCD89B48D402E9 /* JSONStandardTypeConversions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSONStandardTypeConversions.swift; path = Sources/Apollo/JSONStandardTypeConversions.swift; sourceTree = "<group>"; };
+		428E1D3496F6A88183C2DE3F71595ED9 /* WebSocketTransport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WebSocketTransport.swift; path = Sources/ApolloWebSocket/WebSocketTransport.swift; sourceTree = "<group>"; };
+		4C42B20882A74DF745988FA187F6452C /* GraphQLResponseGenerator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GraphQLResponseGenerator.swift; path = Sources/Apollo/GraphQLResponseGenerator.swift; sourceTree = "<group>"; };
+		52B877BD541E4AAA87D72398A03B615C /* Pods_graphql_ios_chatTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_graphql_ios_chatTests.framework; path = "Pods-graphql-ios-chatTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		59122B591D7B44278623582A9CCAE3DE /* ApolloStore.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ApolloStore.swift; path = Sources/Apollo/ApolloStore.swift; sourceTree = "<group>"; };
+		5ED4D02338C56546FBD8A12EC3EA4237 /* Pods-graphql-ios-chat-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-graphql-ios-chat-acknowledgements.markdown"; sourceTree = "<group>"; };
+		5F2FB5EC9DC09576D3F665B485BCFCDF /* WebSocket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WebSocket.swift; path = Sources/WebSocket.swift; sourceTree = "<group>"; };
+		67159B3FF270127FB05C318D3EB7D98E /* Pods-graphql-ios-chatTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-graphql-ios-chatTests-resources.sh"; sourceTree = "<group>"; };
+		6A4C04B204D97B3D3251A03B3D9817B0 /* Pods-graphql-ios-chatUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-graphql-ios-chatUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		6D5FD6FF79B965804A413EC42CAAEC43 /* AsynchronousOperation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AsynchronousOperation.swift; path = Sources/Apollo/AsynchronousOperation.swift; sourceTree = "<group>"; };
+		72DE25150F930895ADA43FC41C6FF336 /* Pods-graphql-ios-chatUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-graphql-ios-chatUITests.modulemap"; sourceTree = "<group>"; };
+		743461E4BA1FFA1AEE8DF652C52FEC51 /* GraphQLDependencyTracker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GraphQLDependencyTracker.swift; path = Sources/Apollo/GraphQLDependencyTracker.swift; sourceTree = "<group>"; };
+		7675566E9141F22C21E0071DF05DE370 /* Pods-graphql-ios-chatUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-graphql-ios-chatUITests-frameworks.sh"; sourceTree = "<group>"; };
+		7A338F4E5D1107CA46C55C5DA7F180D1 /* Pods-graphql-ios-chatTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-graphql-ios-chatTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		7A50A3DE4B7DC563CC03A0CAD939E494 /* Apollo-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Apollo-prefix.pch"; sourceTree = "<group>"; };
+		7B9C578A16F2DC9A9C2E6C394EBDFF67 /* GraphQLSelectionSet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GraphQLSelectionSet.swift; path = Sources/Apollo/GraphQLSelectionSet.swift; sourceTree = "<group>"; };
+		7E06EF355668BE44659FAA13E643AA89 /* GraphQLResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GraphQLResponse.swift; path = Sources/Apollo/GraphQLResponse.swift; sourceTree = "<group>"; };
+		8010A23417BA3C92B99E3A184B6BD3E6 /* Pods-graphql-ios-chat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-graphql-ios-chat.debug.xcconfig"; sourceTree = "<group>"; };
+		812F57AFF7D8C274CD628BFC26B3C06F /* NetworkTransport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkTransport.swift; path = Sources/Apollo/NetworkTransport.swift; sourceTree = "<group>"; };
+		84B69E15B9409C4CDFC81707A5FEC449 /* check-and-run-apollo-codegen.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; name = "check-and-run-apollo-codegen.sh"; path = "scripts/check-and-run-apollo-codegen.sh"; sourceTree = "<group>"; };
+		87EB4F26E793C7BACBDF9492C771F16D /* Pods-graphql-ios-chatUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-graphql-ios-chatUITests.release.xcconfig"; sourceTree = "<group>"; };
+		8C02BAF89FA9114234F0E61FF55667C3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8CDB7D6D0C0A3F48972EC40B22B2D294 /* Apollo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Apollo-umbrella.h"; sourceTree = "<group>"; };
+		8E9A1E985DE9C712D45DB0D8E53204A6 /* Pods_graphql_ios_chatUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_graphql_ios_chatUITests.framework; path = "Pods-graphql-ios-chatUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		91D861162F96ABB99E46D5C2A0E41363 /* Pods-graphql-ios-chat-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-graphql-ios-chat-resources.sh"; sourceTree = "<group>"; };
+		92B203B580B8E6E54D3E589B5661831A /* Apollo.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Apollo.xcconfig; sourceTree = "<group>"; };
+		92BEE6430A8C1E9C3B1753D2FE5E5AF1 /* Promise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Promise.swift; path = Sources/Apollo/Promise.swift; sourceTree = "<group>"; };
+		93077FE960A267F75CCEC93495F8AE63 /* SplitNetworkTransport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SplitNetworkTransport.swift; path = Sources/ApolloWebSocket/SplitNetworkTransport.swift; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9732054FEC903427C7CA20DE0ABD895E /* JSONSerializationFormat.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSONSerializationFormat.swift; path = Sources/Apollo/JSONSerializationFormat.swift; sourceTree = "<group>"; };
+		98A25004581801D20E68AAC9460B2B2A /* Pods-graphql-ios-chat-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-graphql-ios-chat-acknowledgements.plist"; sourceTree = "<group>"; };
+		9E9BB084965C3489080B501303EED6F9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1ECD4DBC2CEA9CA0C02C29BAEA34C96 /* GraphQLQueryWatcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GraphQLQueryWatcher.swift; path = Sources/Apollo/GraphQLQueryWatcher.swift; sourceTree = "<group>"; };
+		A2777D441DC2BD3F63CD4F23D2D9D451 /* Utilities.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Utilities.swift; path = Sources/Apollo/Utilities.swift; sourceTree = "<group>"; };
+		A58A67079B64BC789DB858A69D73F72C /* Pods-graphql-ios-chat.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-graphql-ios-chat.modulemap"; sourceTree = "<group>"; };
+		A72BC1BFAE39C493F9F78F51A73F7CBD /* DataLoader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataLoader.swift; path = Sources/Apollo/DataLoader.swift; sourceTree = "<group>"; };
+		A7E0B5D2AA6DCA0147AC663CC4D043DD /* RecordSet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RecordSet.swift; path = Sources/Apollo/RecordSet.swift; sourceTree = "<group>"; };
+		A9918D422FEE7427A2CBCB421C8C43D3 /* Starscream-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Starscream-dummy.m"; sourceTree = "<group>"; };
+		AC8C5D400C03556F2E2CA41E595A9188 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACB30B29D7DF5670AECC2EB6722D26EA /* Pods-graphql-ios-chat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-graphql-ios-chat.release.xcconfig"; sourceTree = "<group>"; };
+		AF8F535A3A025084D82219ABBE32AEE8 /* Compression.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Compression.swift; path = Sources/Compression.swift; sourceTree = "<group>"; };
+		B15DD2A6CAE73F33C4AD963957089A6D /* InMemoryNormalizedCache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InMemoryNormalizedCache.swift; path = Sources/Apollo/InMemoryNormalizedCache.swift; sourceTree = "<group>"; };
+		B217A426729862625BF8D1A46985429A /* Pods-graphql-ios-chatTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-graphql-ios-chatTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		B397C31BC2AA3C7E1446B6E45AB8456E /* Pods-graphql-ios-chatUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-graphql-ios-chatUITests-umbrella.h"; sourceTree = "<group>"; };
+		B5789692A6656366664AAD57DB7B6EEF /* NormalizedCache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NormalizedCache.swift; path = Sources/Apollo/NormalizedCache.swift; sourceTree = "<group>"; };
+		B75954BD6F12C75A11066B240C7795A5 /* GraphQLExecutor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GraphQLExecutor.swift; path = Sources/Apollo/GraphQLExecutor.swift; sourceTree = "<group>"; };
+		B82389F5FCAE106ACDB84164039795BF /* GraphQLError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GraphQLError.swift; path = Sources/Apollo/GraphQLError.swift; sourceTree = "<group>"; };
+		BADDE11BEB6D776FA8D6216F8E6D9F96 /* ApolloClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ApolloClient.swift; path = Sources/Apollo/ApolloClient.swift; sourceTree = "<group>"; };
+		BDD27104D1381C1864A85B1613C9E564 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE15D7F915F127B1A8D5ED7BB4E3EAD5 /* Apollo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Apollo-dummy.m"; sourceTree = "<group>"; };
+		CBD37EE3DB071D6B296FED3867E2C00A /* GraphQLResultNormalizer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GraphQLResultNormalizer.swift; path = Sources/Apollo/GraphQLResultNormalizer.swift; sourceTree = "<group>"; };
+		CDFB4FE5D323203F2BEA6E95AE8725E5 /* Pods-graphql-ios-chatUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-graphql-ios-chatUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D45CD42F5F0230D6274B6C490231C778 /* Pods-graphql-ios-chatTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-graphql-ios-chatTests.release.xcconfig"; sourceTree = "<group>"; };
+		D60567A255DF69544D76CDFD780ACFB2 /* Pods-graphql-ios-chatTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-graphql-ios-chatTests.modulemap"; sourceTree = "<group>"; };
+		D8025D80B5C571F71109DAC84266275D /* Pods_graphql_ios_chat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_graphql_ios_chat.framework; path = "Pods-graphql-ios-chat.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEC1AFD9BB771A076C3D8BF9CC67EA58 /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Sources/Apollo/Result.swift; sourceTree = "<group>"; };
+		E343E93E0574DE6E3497EE75DB6F2A63 /* Pods-graphql-ios-chat-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-graphql-ios-chat-frameworks.sh"; sourceTree = "<group>"; };
+		E4CAFC9F288008FDCA5967FED61694D4 /* GraphQLOperation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GraphQLOperation.swift; path = Sources/Apollo/GraphQLOperation.swift; sourceTree = "<group>"; };
+		E54B0FCC3C02EEB3539078BC3829D21A /* HTTPNetworkTransport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPNetworkTransport.swift; path = Sources/Apollo/HTTPNetworkTransport.swift; sourceTree = "<group>"; };
+		E70C0D156B801067B400C07A2F64CC31 /* GraphQLResult.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GraphQLResult.swift; path = Sources/Apollo/GraphQLResult.swift; sourceTree = "<group>"; };
+		E712C3191C2C2F648E06E7C80943BE9C /* Starscream-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Starscream-umbrella.h"; sourceTree = "<group>"; };
+		E9C86C03BDF1900369F046B3A31EC031 /* Locking.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Locking.swift; path = Sources/Apollo/Locking.swift; sourceTree = "<group>"; };
+		ED0A8E03274A0A692725776AC6179A92 /* Starscream.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Starscream.xcconfig; sourceTree = "<group>"; };
+		EE5BDCD440EE12001DEDCB6A85F0DE5B /* JSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSON.swift; path = Sources/Apollo/JSON.swift; sourceTree = "<group>"; };
+		F1F7B4AFB2E41A369EFF6E3E81C04691 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		F74D7BE1D92F474657983ABB0CEA969F /* Apollo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Apollo.modulemap; sourceTree = "<group>"; };
+		F8FEBEFC17A1791186ACF357D682E645 /* GraphQLSelectionSetMapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GraphQLSelectionSetMapper.swift; path = Sources/Apollo/GraphQLSelectionSetMapper.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1431D1C48268E05C89608809B604A141 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDCDA08EDBEF6D90E45F3EB987F7085D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52A90ED71A2CBA333EB8133F7FFC059E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6A6B305C1D4CBE6358006FE5D4456A6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8DC97E2423DBA006B1A6B091022B48C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E9EFDAFA6D39A5B7C6DEA75B555E79D /* Foundation.framework in Frameworks */,
+				A61C9A82332E8A0008FE755FBBF46ECD /* Starscream.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB4E7826CF5F5701D72A09879C739893 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3C342D8D1EC556C28A3137D54850ECE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDF3B9CE40ED45DC8A6ACC553E15A384 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7279E8F875039FB394CF4808B04E66B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1D17E30CA9D9FDB60C9E3F0B44ED01D8 /* Pods-graphql-ios-chat */ = {
+			isa = PBXGroup;
+			children = (
+				9E9BB084965C3489080B501303EED6F9 /* Info.plist */,
+				A58A67079B64BC789DB858A69D73F72C /* Pods-graphql-ios-chat.modulemap */,
+				5ED4D02338C56546FBD8A12EC3EA4237 /* Pods-graphql-ios-chat-acknowledgements.markdown */,
+				98A25004581801D20E68AAC9460B2B2A /* Pods-graphql-ios-chat-acknowledgements.plist */,
+				27D7B1E22258C4BF7F71F27D5E421E41 /* Pods-graphql-ios-chat-dummy.m */,
+				E343E93E0574DE6E3497EE75DB6F2A63 /* Pods-graphql-ios-chat-frameworks.sh */,
+				91D861162F96ABB99E46D5C2A0E41363 /* Pods-graphql-ios-chat-resources.sh */,
+				09DC19B3E2AC241C27B4D8E0B85D3D80 /* Pods-graphql-ios-chat-umbrella.h */,
+				8010A23417BA3C92B99E3A184B6BD3E6 /* Pods-graphql-ios-chat.debug.xcconfig */,
+				ACB30B29D7DF5670AECC2EB6722D26EA /* Pods-graphql-ios-chat.release.xcconfig */,
+			);
+			name = "Pods-graphql-ios-chat";
+			path = "Target Support Files/Pods-graphql-ios-chat";
+			sourceTree = "<group>";
+		};
+		26D47D753E1163E778A79260A8F9284C /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1D17E30CA9D9FDB60C9E3F0B44ED01D8 /* Pods-graphql-ios-chat */,
+				D8D404F0C4A3768EC5BD2A03C5FE96F2 /* Pods-graphql-ios-chatTests */,
+				98825694D7750E7346E1BA8A86851B12 /* Pods-graphql-ios-chatUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		2CCF43ACDFA40F61F7C18A42CAEA5F30 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				03F68A6945BA591DB7654248F66E622F /* Info.plist */,
+				34E1D4FAA12692B02E7D830328944BBE /* Starscream.modulemap */,
+				ED0A8E03274A0A692725776AC6179A92 /* Starscream.xcconfig */,
+				A9918D422FEE7427A2CBCB421C8C43D3 /* Starscream-dummy.m */,
+				0992E3C8AB70BF8FF8A3E4C5C99BE3D1 /* Starscream-prefix.pch */,
+				E712C3191C2C2F648E06E7C80943BE9C /* Starscream-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Starscream";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				C6C6CF85326A60B112CC4A77BAD281D7 /* Frameworks */,
+				CB74EA8892769E712499E94FD6564D4C /* Pods */,
+				898EC94290A01E2563EEDA7246E9BCAC /* Products */,
+				26D47D753E1163E778A79260A8F9284C /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		80159F06D95D1013B1698360E4657193 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F74D7BE1D92F474657983ABB0CEA969F /* Apollo.modulemap */,
+				92B203B580B8E6E54D3E589B5661831A /* Apollo.xcconfig */,
+				BE15D7F915F127B1A8D5ED7BB4E3EAD5 /* Apollo-dummy.m */,
+				7A50A3DE4B7DC563CC03A0CAD939E494 /* Apollo-prefix.pch */,
+				8CDB7D6D0C0A3F48972EC40B22B2D294 /* Apollo-umbrella.h */,
+				AC8C5D400C03556F2E2CA41E595A9188 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Apollo";
+			sourceTree = "<group>";
+		};
+		8021F40311983A0EED3FCD32E09145D6 /* WebSocket */ = {
+			isa = PBXGroup;
+			children = (
+				93077FE960A267F75CCEC93495F8AE63 /* SplitNetworkTransport.swift */,
+				428E1D3496F6A88183C2DE3F71595ED9 /* WebSocketTransport.swift */,
+			);
+			name = WebSocket;
+			sourceTree = "<group>";
+		};
+		898EC94290A01E2563EEDA7246E9BCAC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2BF5ECCB7A263AA93C11AD863869409A /* Apollo.framework */,
+				D8025D80B5C571F71109DAC84266275D /* Pods_graphql_ios_chat.framework */,
+				52B877BD541E4AAA87D72398A03B615C /* Pods_graphql_ios_chatTests.framework */,
+				8E9A1E985DE9C712D45DB0D8E53204A6 /* Pods_graphql_ios_chatUITests.framework */,
+				2E1E532D3EEC326754197CF8678E6026 /* Starscream.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		96F30339E81C9FD037B9C815C3120A98 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				84B69E15B9409C4CDFC81707A5FEC449 /* check-and-run-apollo-codegen.sh */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		98825694D7750E7346E1BA8A86851B12 /* Pods-graphql-ios-chatUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BDD27104D1381C1864A85B1613C9E564 /* Info.plist */,
+				72DE25150F930895ADA43FC41C6FF336 /* Pods-graphql-ios-chatUITests.modulemap */,
+				CDFB4FE5D323203F2BEA6E95AE8725E5 /* Pods-graphql-ios-chatUITests-acknowledgements.markdown */,
+				6A4C04B204D97B3D3251A03B3D9817B0 /* Pods-graphql-ios-chatUITests-acknowledgements.plist */,
+				14E4CA25EC96B5544B463D759626382B /* Pods-graphql-ios-chatUITests-dummy.m */,
+				7675566E9141F22C21E0071DF05DE370 /* Pods-graphql-ios-chatUITests-frameworks.sh */,
+				1EBDFE4EAC3DA1C940EEA58E5EC06A56 /* Pods-graphql-ios-chatUITests-resources.sh */,
+				B397C31BC2AA3C7E1446B6E45AB8456E /* Pods-graphql-ios-chatUITests-umbrella.h */,
+				2B89D0C6A220C85F4D2A1F469D1172E3 /* Pods-graphql-ios-chatUITests.debug.xcconfig */,
+				87EB4F26E793C7BACBDF9492C771F16D /* Pods-graphql-ios-chatUITests.release.xcconfig */,
+			);
+			name = "Pods-graphql-ios-chatUITests";
+			path = "Target Support Files/Pods-graphql-ios-chatUITests";
+			sourceTree = "<group>";
+		};
+		B0F47B739E61D6704A504BAF8ADEFB30 /* Apollo */ = {
+			isa = PBXGroup;
+			children = (
+				F8E61C92BEAC7972B6A887D33C8ED948 /* Core */,
+				80159F06D95D1013B1698360E4657193 /* Support Files */,
+				8021F40311983A0EED3FCD32E09145D6 /* WebSocket */,
+			);
+			name = Apollo;
+			path = Apollo;
+			sourceTree = "<group>";
+		};
+		C6C6CF85326A60B112CC4A77BAD281D7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0F52249DD4D3DD3159B64A42F2E7349B /* Starscream.framework */,
+				F73D217E75B288FCF69E835DC1DD524A /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CB74EA8892769E712499E94FD6564D4C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B0F47B739E61D6704A504BAF8ADEFB30 /* Apollo */,
+				CE69B78B1248EF4C57FB751EB87A4CC8 /* Starscream */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CE69B78B1248EF4C57FB751EB87A4CC8 /* Starscream */ = {
+			isa = PBXGroup;
+			children = (
+				AF8F535A3A025084D82219ABBE32AEE8 /* Compression.swift */,
+				1CC9F391CF8E4288345085B5D95F5FF3 /* SSLSecurity.swift */,
+				5F2FB5EC9DC09576D3F665B485BCFCDF /* WebSocket.swift */,
+				2CCF43ACDFA40F61F7C18A42CAEA5F30 /* Support Files */,
+			);
+			name = Starscream;
+			path = Starscream;
+			sourceTree = "<group>";
+		};
+		D8D404F0C4A3768EC5BD2A03C5FE96F2 /* Pods-graphql-ios-chatTests */ = {
+			isa = PBXGroup;
+			children = (
+				8C02BAF89FA9114234F0E61FF55667C3 /* Info.plist */,
+				D60567A255DF69544D76CDFD780ACFB2 /* Pods-graphql-ios-chatTests.modulemap */,
+				7A338F4E5D1107CA46C55C5DA7F180D1 /* Pods-graphql-ios-chatTests-acknowledgements.markdown */,
+				B217A426729862625BF8D1A46985429A /* Pods-graphql-ios-chatTests-acknowledgements.plist */,
+				03A1DAF2EE83AC30C2D3FC8ECDD7EFBE /* Pods-graphql-ios-chatTests-dummy.m */,
+				2DC202ACBB5B1E5CDAC1B2C93A3A12A1 /* Pods-graphql-ios-chatTests-frameworks.sh */,
+				67159B3FF270127FB05C318D3EB7D98E /* Pods-graphql-ios-chatTests-resources.sh */,
+				063DD1D6738871BC423DB61A0C5C2A94 /* Pods-graphql-ios-chatTests-umbrella.h */,
+				00ED74851357FEF09B977ED51AE3DEAA /* Pods-graphql-ios-chatTests.debug.xcconfig */,
+				D45CD42F5F0230D6274B6C490231C778 /* Pods-graphql-ios-chatTests.release.xcconfig */,
+			);
+			name = "Pods-graphql-ios-chatTests";
+			path = "Target Support Files/Pods-graphql-ios-chatTests";
+			sourceTree = "<group>";
+		};
+		F73D217E75B288FCF69E835DC1DD524A /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				F1F7B4AFB2E41A369EFF6E3E81C04691 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		F8E61C92BEAC7972B6A887D33C8ED948 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				BADDE11BEB6D776FA8D6216F8E6D9F96 /* ApolloClient.swift */,
+				59122B591D7B44278623582A9CCAE3DE /* ApolloStore.swift */,
+				6D5FD6FF79B965804A413EC42CAAEC43 /* AsynchronousOperation.swift */,
+				145B38752DCF753EE84F2E84456C1561 /* Collections.swift */,
+				A72BC1BFAE39C493F9F78F51A73F7CBD /* DataLoader.swift */,
+				743461E4BA1FFA1AEE8DF652C52FEC51 /* GraphQLDependencyTracker.swift */,
+				B82389F5FCAE106ACDB84164039795BF /* GraphQLError.swift */,
+				B75954BD6F12C75A11066B240C7795A5 /* GraphQLExecutor.swift */,
+				0DE4DF43EACE3DC72DA952AB3C8D81AC /* GraphQLInputValue.swift */,
+				E4CAFC9F288008FDCA5967FED61694D4 /* GraphQLOperation.swift */,
+				A1ECD4DBC2CEA9CA0C02C29BAEA34C96 /* GraphQLQueryWatcher.swift */,
+				7E06EF355668BE44659FAA13E643AA89 /* GraphQLResponse.swift */,
+				4C42B20882A74DF745988FA187F6452C /* GraphQLResponseGenerator.swift */,
+				E70C0D156B801067B400C07A2F64CC31 /* GraphQLResult.swift */,
+				03DD6FE059C09CE5F2E19B5D1C5EA8C6 /* GraphQLResultAccumulator.swift */,
+				CBD37EE3DB071D6B296FED3867E2C00A /* GraphQLResultNormalizer.swift */,
+				7B9C578A16F2DC9A9C2E6C394EBDFF67 /* GraphQLSelectionSet.swift */,
+				F8FEBEFC17A1791186ACF357D682E645 /* GraphQLSelectionSetMapper.swift */,
+				E54B0FCC3C02EEB3539078BC3829D21A /* HTTPNetworkTransport.swift */,
+				B15DD2A6CAE73F33C4AD963957089A6D /* InMemoryNormalizedCache.swift */,
+				EE5BDCD440EE12001DEDCB6A85F0DE5B /* JSON.swift */,
+				9732054FEC903427C7CA20DE0ABD895E /* JSONSerializationFormat.swift */,
+				3A91F2D88ECD94E3C7CCD89B48D402E9 /* JSONStandardTypeConversions.swift */,
+				E9C86C03BDF1900369F046B3A31EC031 /* Locking.swift */,
+				812F57AFF7D8C274CD628BFC26B3C06F /* NetworkTransport.swift */,
+				B5789692A6656366664AAD57DB7B6EEF /* NormalizedCache.swift */,
+				92BEE6430A8C1E9C3B1753D2FE5E5AF1 /* Promise.swift */,
+				0CCC9C1318035CB339320F5288BE9847 /* Record.swift */,
+				A7E0B5D2AA6DCA0147AC663CC4D043DD /* RecordSet.swift */,
+				DEC1AFD9BB771A076C3D8BF9CC67EA58 /* Result.swift */,
+				22884389634AA7EC65F7FD23B883BF95 /* ResultOrPromise.swift */,
+				A2777D441DC2BD3F63CD4F23D2D9D451 /* Utilities.swift */,
+				96F30339E81C9FD037B9C815C3120A98 /* Resources */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		3EDFC1712DC4D6E9E8AB7D97DBC39482 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE4FA4922B3F71A70C3F8CA2B1624657 /* Starscream-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CF914BCCA2962D5321DD73BA71EE655 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE1FEBDAED95FDDF49BF62B1BCDEE166 /* Apollo-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4CC51A6534A3AD1D672F916742B4888 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15712F379E37DF530E9B88E426CA787B /* Pods-graphql-ios-chat-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCF88B39547EE9881C9B426FD59029D2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				313E32DF2733ED16B3239187FA59406A /* Pods-graphql-ios-chatTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEBCAAD83A31BA9B9574825A2CB3AB37 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C790966EE8A13578E4F94B6A09FAD34 /* Pods-graphql-ios-chatUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		18EE38D23DB0D1F2B10B0E01DE6F9298 /* Apollo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D1FB898B90E4A8264F81AD19EA08CC6 /* Build configuration list for PBXNativeTarget "Apollo" */;
+			buildPhases = (
+				B41F98B3EBAC47605A88E36427ADC8D6 /* Sources */,
+				8DC97E2423DBA006B1A6B091022B48C2 /* Frameworks */,
+				CFD89F317F0FEBE2C7E34F4373CB0045 /* Resources */,
+				4CF914BCCA2962D5321DD73BA71EE655 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				09201322FA3EEEB149BC871DAEA1B4F2 /* PBXTargetDependency */,
+			);
+			name = Apollo;
+			productName = Apollo;
+			productReference = 2BF5ECCB7A263AA93C11AD863869409A /* Apollo.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		891EB2AC758B8014D7FA55B44769D5E4 /* Starscream */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DECEF19E004709CF147C9B365AE9BA23 /* Build configuration list for PBXNativeTarget "Starscream" */;
+			buildPhases = (
+				A85D8BF231D67FA2DC3912DFCAE1A84E /* Sources */,
+				52A90ED71A2CBA333EB8133F7FFC059E /* Frameworks */,
+				3EDFC1712DC4D6E9E8AB7D97DBC39482 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Starscream;
+			productName = Starscream;
+			productReference = 2E1E532D3EEC326754197CF8678E6026 /* Starscream.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8A4DBC8CD33EFE3FAE87D5E4E9CC87D3 /* Pods-graphql-ios-chatTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC590B35BF92CA3CCE64DD4C6608BDA6 /* Build configuration list for PBXNativeTarget "Pods-graphql-ios-chatTests" */;
+			buildPhases = (
+				D6BA6F0043B67D9FE62B0CDAFF68F59B /* Sources */,
+				1431D1C48268E05C89608809B604A141 /* Frameworks */,
+				DCF88B39547EE9881C9B426FD59029D2 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2956CF4082922993E8F2A8D33E76A329 /* PBXTargetDependency */,
+			);
+			name = "Pods-graphql-ios-chatTests";
+			productName = "Pods-graphql-ios-chatTests";
+			productReference = 52B877BD541E4AAA87D72398A03B615C /* Pods_graphql_ios_chatTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		BF8290CD81A146F58D03D5A5930DF945 /* Pods-graphql-ios-chat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 98083A154CB1E729A22EA6A7A425991D /* Build configuration list for PBXNativeTarget "Pods-graphql-ios-chat" */;
+			buildPhases = (
+				E42E435981C86FE88D6F2C485269D153 /* Sources */,
+				BB4E7826CF5F5701D72A09879C739893 /* Frameworks */,
+				B4CC51A6534A3AD1D672F916742B4888 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				86122C8B18C91DE295DF0988689B2425 /* PBXTargetDependency */,
+				9FC78420B72F4248D1DAB725A7DF0B92 /* PBXTargetDependency */,
+			);
+			name = "Pods-graphql-ios-chat";
+			productName = "Pods-graphql-ios-chat";
+			productReference = D8025D80B5C571F71109DAC84266275D /* Pods_graphql_ios_chat.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E7A03756DD242F9317D9AD9658279952 /* Pods-graphql-ios-chatUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E9623FA1DE562845A7C674EE3D98712 /* Build configuration list for PBXNativeTarget "Pods-graphql-ios-chatUITests" */;
+			buildPhases = (
+				4C5A2EDA2152D661BED31E35C160ABBE /* Sources */,
+				FDF3B9CE40ED45DC8A6ACC553E15A384 /* Frameworks */,
+				FEBCAAD83A31BA9B9574825A2CB3AB37 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				06CE61AC6A1EC0E10539F258CEE7B536 /* PBXTargetDependency */,
+			);
+			name = "Pods-graphql-ios-chatUITests";
+			productName = "Pods-graphql-ios-chatUITests";
+			productReference = 8E9A1E985DE9C712D45DB0D8E53204A6 /* Pods_graphql_ios_chatUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 898EC94290A01E2563EEDA7246E9BCAC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				18EE38D23DB0D1F2B10B0E01DE6F9298 /* Apollo */,
+				BF8290CD81A146F58D03D5A5930DF945 /* Pods-graphql-ios-chat */,
+				8A4DBC8CD33EFE3FAE87D5E4E9CC87D3 /* Pods-graphql-ios-chatTests */,
+				E7A03756DD242F9317D9AD9658279952 /* Pods-graphql-ios-chatUITests */,
+				891EB2AC758B8014D7FA55B44769D5E4 /* Starscream */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CFD89F317F0FEBE2C7E34F4373CB0045 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				424D99DC0FBC5C3BE477A3243EBF112A /* check-and-run-apollo-codegen.sh in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4C5A2EDA2152D661BED31E35C160ABBE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				023C038695FADDF305DE6BEB88453843 /* Pods-graphql-ios-chatUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A85D8BF231D67FA2DC3912DFCAE1A84E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3167AB38806F6EA2DE3DEE690A47BB6C /* Compression.swift in Sources */,
+				EF7C2EBC21D826DDC2953E115B3110AA /* SSLSecurity.swift in Sources */,
+				2F1EB1CE0600FA109B3650E847C41AE9 /* Starscream-dummy.m in Sources */,
+				98B85AF219D5EF4BFA8ED2A59E1BDE8D /* WebSocket.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B41F98B3EBAC47605A88E36427ADC8D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C9FF4CFF9E32ABA40D71A674682C2A8 /* Apollo-dummy.m in Sources */,
+				F928CFC3377FB96211FEE99BBD32272C /* ApolloClient.swift in Sources */,
+				CD7B68A7CED6AB01B553656F6762DF14 /* ApolloStore.swift in Sources */,
+				1F8A36795DB849E7D9E26922148AA3C3 /* AsynchronousOperation.swift in Sources */,
+				5246B0E31B0CEC56EDA1C8076E177B08 /* Collections.swift in Sources */,
+				382736054B3846385B9A219A8D4C9B9C /* DataLoader.swift in Sources */,
+				5025AF0EA7E3350CE182BFF7E2735E17 /* GraphQLDependencyTracker.swift in Sources */,
+				BC6033A16E7905772A5D0CFEC496B0FB /* GraphQLError.swift in Sources */,
+				4F843A04511B70F8DC33411A39B9DDC1 /* GraphQLExecutor.swift in Sources */,
+				904B55543B7414C4AEA76687EF4ACB2D /* GraphQLInputValue.swift in Sources */,
+				8548A9572A6CF0E4287891AC763B1DE7 /* GraphQLOperation.swift in Sources */,
+				424475300F47227F6C33178456F66042 /* GraphQLQueryWatcher.swift in Sources */,
+				E5A56EEB7E9ED4E7CAF83FB9FB70AC70 /* GraphQLResponse.swift in Sources */,
+				5EB7A3BBA6DA3AD8442BD13BB9706771 /* GraphQLResponseGenerator.swift in Sources */,
+				AB12A4A40B71C469DFAF962C8A1BCCD0 /* GraphQLResult.swift in Sources */,
+				3C6D2BA1F8035CA6C7ADD3DC27A8F39A /* GraphQLResultAccumulator.swift in Sources */,
+				BE2CF56C555AB0CABB9A8C069DFC2D77 /* GraphQLResultNormalizer.swift in Sources */,
+				794DA3CA7B9A7214BB5A8017D2C31A2D /* GraphQLSelectionSet.swift in Sources */,
+				E2291C070FBEF4E3A2AFD5A362EF3AD2 /* GraphQLSelectionSetMapper.swift in Sources */,
+				56A92C2449281C7197C0F07C363EB02D /* HTTPNetworkTransport.swift in Sources */,
+				80C15DC6CCFEE22D17236BDE85643088 /* InMemoryNormalizedCache.swift in Sources */,
+				6EF8B1510CB48390FE434D05BEDCEAC3 /* JSON.swift in Sources */,
+				8F35B3A49A17E0DE8880F5416E942C72 /* JSONSerializationFormat.swift in Sources */,
+				3F5664A11296C60F0748D0047E4B64D4 /* JSONStandardTypeConversions.swift in Sources */,
+				2C3CA098A3E2F82F4AFE0AD1FA7A1148 /* Locking.swift in Sources */,
+				3A3BB5668BFC551154B11387C1B1D558 /* NetworkTransport.swift in Sources */,
+				5792E484104BBC25EA9357E0E6B7BF2F /* NormalizedCache.swift in Sources */,
+				88735D822C3C6433BD934FACD3F30B7C /* Promise.swift in Sources */,
+				F90D6735A055EFC772B7899DB1E44DFB /* Record.swift in Sources */,
+				F929BB2ACA885ED3BBDB60559505A318 /* RecordSet.swift in Sources */,
+				529B1473F5735FD3E91888CD06FF92AB /* Result.swift in Sources */,
+				D8E20F651FF4F5A3D032F1CBBEB970DC /* ResultOrPromise.swift in Sources */,
+				4E7721F105B3D9BC79CE6ABE4C1F367F /* SplitNetworkTransport.swift in Sources */,
+				A14971FDCDC194BC082E7FF1702FC2F6 /* Utilities.swift in Sources */,
+				EF50FBB33BF85B3F32B09CF048CEADDC /* WebSocketTransport.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6BA6F0043B67D9FE62B0CDAFF68F59B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30423D4A953CC61648E178811F44675C /* Pods-graphql-ios-chatTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E42E435981C86FE88D6F2C485269D153 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				115A5B6EA87A947E93AB152302B5F16F /* Pods-graphql-ios-chat-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		06CE61AC6A1EC0E10539F258CEE7B536 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-graphql-ios-chat";
+			target = BF8290CD81A146F58D03D5A5930DF945 /* Pods-graphql-ios-chat */;
+			targetProxy = B164B2673EA1B42604BCC69648ADB0BA /* PBXContainerItemProxy */;
+		};
+		09201322FA3EEEB149BC871DAEA1B4F2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Starscream;
+			target = 891EB2AC758B8014D7FA55B44769D5E4 /* Starscream */;
+			targetProxy = FF82BE6E52C86580E5FE81E7AD7CE6E0 /* PBXContainerItemProxy */;
+		};
+		2956CF4082922993E8F2A8D33E76A329 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-graphql-ios-chat";
+			target = BF8290CD81A146F58D03D5A5930DF945 /* Pods-graphql-ios-chat */;
+			targetProxy = C25755F1AAA874E961A4213832B15F7F /* PBXContainerItemProxy */;
+		};
+		86122C8B18C91DE295DF0988689B2425 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Apollo;
+			target = 18EE38D23DB0D1F2B10B0E01DE6F9298 /* Apollo */;
+			targetProxy = 33D59CE1E732AF368A1CC3CF825AB075 /* PBXContainerItemProxy */;
+		};
+		9FC78420B72F4248D1DAB725A7DF0B92 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Starscream;
+			target = 891EB2AC758B8014D7FA55B44769D5E4 /* Starscream */;
+			targetProxy = 1E2FB49D70C885B2E7214D904F70655D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		04629DEF246AD45A6DFD643D3BC49CAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92B203B580B8E6E54D3E589B5661831A /* Apollo.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Apollo/Apollo-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Apollo/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Apollo/Apollo.modulemap";
+				PRODUCT_MODULE_NAME = Apollo;
+				PRODUCT_NAME = Apollo;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		08638A96A528B1EC32DE62F8A728389D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		1CF8A2288A8C23C94586AD185C7EF5D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87EB4F26E793C7BACBDF9492C771F16D /* Pods-graphql-ios-chatUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-graphql-ios-chatUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-graphql-ios-chatUITests/Pods-graphql-ios-chatUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		316C62BB5866BC1C3F3C9CD461A51BD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8010A23417BA3C92B99E3A184B6BD3E6 /* Pods-graphql-ios-chat.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-graphql-ios-chat/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-graphql-ios-chat/Pods-graphql-ios-chat.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3BABF877984B09DFB4A3C4AFC5E72411 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ACB30B29D7DF5670AECC2EB6722D26EA /* Pods-graphql-ios-chat.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-graphql-ios-chat/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-graphql-ios-chat/Pods-graphql-ios-chat.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6E6D2B49C2DBEB4AE8E44F2671E8D34A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED0A8E03274A0A692725776AC6179A92 /* Starscream.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Starscream/Starscream-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Starscream/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Starscream/Starscream.modulemap";
+				PRODUCT_MODULE_NAME = Starscream;
+				PRODUCT_NAME = Starscream;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8E664658425F2AC31574A3237FB1CEF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00ED74851357FEF09B977ED51AE3DEAA /* Pods-graphql-ios-chatTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-graphql-ios-chatTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-graphql-ios-chatTests/Pods-graphql-ios-chatTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		936BF617EEF1A7877F5FF58EEBE336A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92B203B580B8E6E54D3E589B5661831A /* Apollo.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Apollo/Apollo-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Apollo/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Apollo/Apollo.modulemap";
+				PRODUCT_MODULE_NAME = Apollo;
+				PRODUCT_NAME = Apollo;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		962B8473C21575115CC4BC3314CEC64E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D45CD42F5F0230D6274B6C490231C778 /* Pods-graphql-ios-chatTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-graphql-ios-chatTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-graphql-ios-chatTests/Pods-graphql-ios-chatTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9BFD0437D7A7E8F2DA1943492CAB756B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED0A8E03274A0A692725776AC6179A92 /* Starscream.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Starscream/Starscream-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Starscream/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Starscream/Starscream.modulemap";
+				PRODUCT_MODULE_NAME = Starscream;
+				PRODUCT_NAME = Starscream;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9DAE5233986C01ADB6E67169C53A3FD2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		C8C6190476A1F481927A81768D51ED7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B89D0C6A220C85F4D2A1F469D1172E3 /* Pods-graphql-ios-chatUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-graphql-ios-chatUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-graphql-ios-chatUITests/Pods-graphql-ios-chatUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D1FB898B90E4A8264F81AD19EA08CC6 /* Build configuration list for PBXNativeTarget "Apollo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				936BF617EEF1A7877F5FF58EEBE336A0 /* Debug */,
+				04629DEF246AD45A6DFD643D3BC49CAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9DAE5233986C01ADB6E67169C53A3FD2 /* Debug */,
+				08638A96A528B1EC32DE62F8A728389D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E9623FA1DE562845A7C674EE3D98712 /* Build configuration list for PBXNativeTarget "Pods-graphql-ios-chatUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C8C6190476A1F481927A81768D51ED7B /* Debug */,
+				1CF8A2288A8C23C94586AD185C7EF5D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		98083A154CB1E729A22EA6A7A425991D /* Build configuration list for PBXNativeTarget "Pods-graphql-ios-chat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				316C62BB5866BC1C3F3C9CD461A51BD5 /* Debug */,
+				3BABF877984B09DFB4A3C4AFC5E72411 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC590B35BF92CA3CCE64DD4C6608BDA6 /* Build configuration list for PBXNativeTarget "Pods-graphql-ios-chatTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E664658425F2AC31574A3237FB1CEF7 /* Debug */,
+				962B8473C21575115CC4BC3314CEC64E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DECEF19E004709CF147C9B365AE9BA23 /* Build configuration list for PBXNativeTarget "Starscream" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E6D2B49C2DBEB4AE8E44F2671E8D34A /* Debug */,
+				9BFD0437D7A7E8F2DA1943492CAB756B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

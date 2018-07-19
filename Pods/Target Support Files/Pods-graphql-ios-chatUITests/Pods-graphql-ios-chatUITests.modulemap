@@ -1,0 +1,6 @@
+framework module Pods_graphql_ios_chatUITests {
+  umbrella header "Pods-graphql-ios-chatUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

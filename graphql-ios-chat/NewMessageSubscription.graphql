@@ -1,0 +1,8 @@
+subscription NewMessageSubscription($userId1: String!, $userId2: String!) {
+  newMessage(from: $userId1, to: $userId2) {
+    text
+    from {
+        id
+    }
+  }
+}
