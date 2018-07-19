@@ -21,6 +21,8 @@ class ChatViewController: UITableViewController {
     
     var messages = [String]()
     
+    var textField = UITextField()
+    
     // MARK: - View lifecycle
     
     override func viewDidLoad() {
@@ -51,18 +53,17 @@ class ChatViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
-        let footerView = UIView(frame: CGRect(x: 0, y: 0, width: tableView.frame.size.width, height: 50))
+        let footerView = UIView(frame: CGRect(x: 0, y: 0, width: tableView.frame.size.width, height: 40))
         
-        let textField = UITextField(frame: CGRect(x: 10, y: 0, width: tableView.frame.size.width - 80, height: 50))
+        textField = UITextField(frame: CGRect(x: 0, y: 0, width: tableView.frame.size.width - 40, height: 40))
         textField.backgroundColor = UIColor.lightGray
-        let sendButton = UIButton(frame: CGRect(x: tableView.frame.size.width - 60, y: 0, width: tableView.frame.size.width, height: 50))
-        let sendButtonImage = UIImage(named: "send")
-        sendButton.setImage(sendButtonImage , for: UIControlState.normal)
+        let sendButton = UIButton(frame: CGRect(x: tableView.frame.size.width - 40, y: 0, width: tableView.frame.size.width, height: 40))
+//        let sendButtonImage = UIImage(named: "send")
+//        sendButton.setImage(sendButtonImage , for: UIControlState.normal)
         
-//        sendButton.addTarget(self, action:self.sendMessage(text:textField.text), for: .touchUpInside)
-//        sendButton.setTitle("Send", for: .normal)
-        sendButton.backgroundColor = UIColor.blue
-        
+        sendButton.addTarget(self, action:#selector(self.sendMessage), for: .touchUpInside)
+        sendButton.setTitle("Send", for: .normal)
+        sendButton.backgroundColor = UIColor.red
         
         footerView.addSubview(textField)
         footerView.addSubview(sendButton)
@@ -70,15 +71,11 @@ class ChatViewController: UITableViewController {
         return footerView
     }
     
-    override func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
-        return 50
-    }
-    
-    
     // MARK: - Subscription, Mutation
     
-    func sendMessage(text: String?) {
-        if (text == nil) {
+    @objc func sendMessage() {
+        let text = textField.text
+        if (text == nil || text!.isEmpty) {
             return
         }
         
